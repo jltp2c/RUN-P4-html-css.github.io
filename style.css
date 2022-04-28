@@ -1,0 +1,304 @@
+@font-face {
+    font-family: "montserrat";
+    src: url(assets/Montserrat/static/Montserrat-Light.ttf);
+}
+
+*{
+    font-family: "montserrat";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.c1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+}
+
+button{
+    border:none;
+    border: 1px solid rgba(221, 212, 212, 0.751);
+    width: 120px;
+    height: 30px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    background: white;
+    cursor: pointer;
+    margin: 20px;
+}
+
+button:hover{
+    color: orange;
+    border: 1px solid orange;
+    transition: 1s ease;
+    transform: translateX(20%);
+}
+p{
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: grey;
+    margin: 20px;
+}
+h1{
+    margin:20px;
+}
+.img1 img {
+    width: 100%;
+    height: 100vh;
+    box-shadow: 10px;
+}
+.c2{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    border-top: 0.2px solid rgba(128, 128, 128, 0.20);
+    background: rgba(245, 245, 245, 0.482);
+}
+.c2 img{
+    width: 50%;
+    height: 500px;
+}
+h2{
+    margin: 20px;
+}
+
+#b2:hover{
+    transform: translateX(-20%);
+}
+
+.c3{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    border: 0.2px solid rgba(128, 128, 128, 0.20);
+    background: whitesmoke;
+}
+.c3 img{
+    width: 100%;
+    height: 50vh;
+}
+#run{
+    width: 400px;
+}
+
+#run1{
+    width: 400px;
+
+  
+}
+
+.mail{
+    display: block;
+    text-align: center;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "na em"
+    "te te"
+    "va va";
+    margin: 20px;
+    place-items: center;
+}
+
+input{
+    margin: 10px;
+    height: 45px;
+    width: 250px;
+    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.20);
+}
+
+#firstname{
+    grid-area: na;
+}
+#EMAIL{
+    grid-area: em;
+}
+
+textarea{
+    grid-area: te;
+    resize: none;
+    width: 530px;
+    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.20);
+}
+input[type="submit"]{
+    grid-area: va;
+    border:none;
+    border: 1px solid rgba(128, 128, 128, 0.20);
+    width: 120px;
+    height: 40px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    background: white;
+    cursor: pointer;
+    margin: 20px;
+    text-transform: uppercase;
+}
+input[type="submit"]:hover{
+    color: orange;
+    border: 1px solid orange;
+    transition: 1s ease;
+}
+.grid{
+    width: 600px;
+    margin:0 auto;
+}
+.reseaux{
+    border-top: 1px solid rgba(128, 128, 128, 0.20);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.reseaux img{
+    margin: 40px;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 0.20);
+    height: 70px;
+    width: 70px;
+    border-radius: 70px;
+}
+
+.reseaux img:hover{
+    transition: 1s all;
+    border: 1px solid orange;
+    background : rgba(255, 166, 0, 0.302);
+}
+
+@media screen and (max-width : 1330px) {
+    .c2{
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+   
+}
+
+@media screen and (max-width : 1000px) {
+    .c1, .c2, .c3{
+        display: block;
+        text-align: center;
+        ;
+    }
+    #run{
+        display: block;
+        margin: 0 auto;
+    }
+
+    #run1{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .img2, .img3{
+        display:none;
+    }
+}
+
+
+@media screen and (max-width : 613px) {
+    .grid{
+        width: 550px;
+    }
+}
+
+@media screen and (max-width : 750px) {
+    .reseaux img{
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width : 550px) {
+
+    .grid{
+    width: 470px;
+    }
+    input{
+        width: 170px;
+        height: 40px ;
+    }
+    textarea{
+        width: 400px;
+    }
+    .reseaux img{
+        margin: 10px;
+    }
+}
+@media screen and (max-width : 475px) {
+
+        .grid{
+        width: 320px;
+        }
+        textarea{
+            width: 270px;
+        }
+        input{
+            width: 125px;
+            height: 35px ;
+        }
+        .reseaux img{
+            margin: 6px;
+            height: 50px;
+            width: 50px;
+            padding: 9px;
+        }
+        H2{
+            font-size: 22px;
+        }
+}
+
+@media screen and (max-width : 475px) {
+p{
+    font-size: 12px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+h1, h2{
+    font-size: 18px;
+    width: 150px;
+    margin: 30px auto;
+}
+}
+
+@media screen and (max-width : 390px) {
+    #run, #run1{
+        display: block;
+        margin: 0 auto;
+        width:300px ;
+    }
+}
+
+@media screen and (max-width : 330px) {
+    .mail{
+        width: 250px;
+    }
+    #run, #run1{
+        width:280px ;
+    }
+
+    input{
+        width: 100px;
+    }
+
+    .grid{
+        width: 250px;
+    }
+
+    textarea{
+        width: 250px;
+    }
+    .reseaux img{
+        margin: 5px;
+        height: 45px;
+        width: 45px;
+        padding: 9px;
+    }
+}
